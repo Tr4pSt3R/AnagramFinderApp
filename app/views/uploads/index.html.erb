@@ -1,0 +1,9 @@
+<h1>Anagram Finder App</h1>
+
+<% @uploads.each do |upload| %>
+  <h2> <%=link_to upload.filename, upload %> </h2>
+<% end %>
+
+<br />
+
+<%= link_to 'New Upload', new_upload_path, :class => 'btn' %>
